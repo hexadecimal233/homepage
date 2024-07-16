@@ -1,0 +1,36 @@
+name: Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - v2  # default branchon:
+  schedule:
+    - cron: '0 20 * * *'
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: recursive
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          external_repository: hexadecimal233/homepage
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./.ouptput
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
