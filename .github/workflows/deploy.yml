@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - v2  # default branchon:
+      - master  # default branchon:
   schedule:
     - cron: '0 20 * * *'
 
