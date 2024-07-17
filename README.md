@@ -1,6 +1,20 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Personal Homepage
 
-Learning Vue & Nuxt.js
+Learning Vue & Nuxt.js ~
+
+## Project Structure
+
+Learning Nuxt.js so I'll take it down
+
+```
+- /
+  ├─ assets (static files)
+  ├─ components (vue components)
+  ├─ layouts (vue layouts)
+  ├─ pages (nuxt routed pages)
+  ├─ public (public files under "/")
+  ├─ server (server-side scripts)
+```
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -17,7 +31,6 @@ npm install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
 ```
 
@@ -26,14 +39,12 @@ npm run dev
 Build the application for production:
 
 ```bash
-# npm
 npm run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
 npm run preview
 ```
 

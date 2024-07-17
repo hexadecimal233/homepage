@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: [],
+  modules: ["@nuxtjs/tailwindcss"],
+  css: ["~/assets/css/global.css"],
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
@@ -13,7 +14,11 @@ export default defineNuxtConfig({
       meta: [
         { charset: "utf-8" },
         { name: "referrer", content: "no-referrer" },
-        { key: "description", name: "description", content: "一个简简单单的个人主页" },
+        {
+          key: "description",
+          name: "description",
+          content: "一个简简单单的个人主页",
+        },
         {
           key: "keywords",
           name: "keywords",
