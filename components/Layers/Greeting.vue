@@ -20,6 +20,7 @@ import { BilibiliIcon, DiscordIcon, GitHubIcon, MailDotRuIcon, SteamIcon, Telegr
               href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=bsVstl7UyIWYLk22GiaApKupGQB5haF0&authKey=%2BPOWzI6ZTA42YuQwoUeiIp4yKAyGEQR5Go6LUu6KbBHMwmcGsDf%2F78bH6aFC4TBy&noverify=0&group_code=904616368">
               <TencentQqIcon style="fill: white" />
             </a>
+            <!-- TODO: Add QQ Qun and Icon effects -->
             <a target="_blank" href="https://www.youtube.com/channel/UC3EJEVxrGTFeM1MNkqaNSJQ">
               <YouTubeIcon style="fill: white" />
             </a>
