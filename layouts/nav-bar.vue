@@ -27,3 +27,5 @@
   width: max-content;
 }
 </style>
+
+<!-- TODO: Redesign the navbar. -->

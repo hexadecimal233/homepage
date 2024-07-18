@@ -67,3 +67,6 @@ import { BilibiliIcon, DiscordIcon, GitHubIcon, MailDotRuIcon, SteamIcon, Telegr
   animation: blink 1s 0s infinite;
 }
 </style>
+
+
+<!-- TODO: Add avatar (w/ rotating fx) using tailwindcss-->

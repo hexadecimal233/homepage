@@ -21,13 +21,20 @@ a:hover {
   border-color: transparent;
 }
 
-
 ::-webkit-scrollbar {
   width: 8px;
   height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff11;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background: #b6b6b6;
 }
+
+/* TODO: Add (Google?) Fonts
+TODO: Add ease-in animations to every layer
+*/

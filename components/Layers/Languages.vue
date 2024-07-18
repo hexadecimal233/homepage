@@ -8,3 +8,5 @@
     </div>
   </div>
 </template>
+
+<!-- TODO: Better Badges View-->

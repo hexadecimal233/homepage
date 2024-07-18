@@ -20,7 +20,7 @@
 .proj {
   @apply flex flex-col h-dvh w-dvw font-sans
    text-white;
-  width: 80vw;
+  width: calc(80vw + 1rem); /* leave 1rem for the padding below*/
 }
 
 .proj-name {
@@ -31,9 +31,15 @@
 }
 
 .proj-content {
-  @apply flex flex-wrap;
+  @apply flex flex-wrap overflow-y-auto;
+  padding: 1rem;
 
   .card {
     flex: 1 0 auto;
   }
 }
+
+/* TODO: Tailwindize the CSS files (or re-cssize em?)
+TODO: Add background to each layer
+TODO: Add diagonal lines to the left-middle side of each layer (except projects)
+*/
