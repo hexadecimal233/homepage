@@ -11,9 +11,9 @@
 
 <style>
 .navigation {
-	position: fixed;
-	top: 0;
-	left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -21,6 +21,7 @@
   background-color: #fff7;
   backdrop-filter: blur(5px);
 }
+
 .nav-item {
   padding: 10px;
   width: max-content;

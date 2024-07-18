@@ -17,6 +17,6 @@ const route = useRoute()
 
 <style>
 .page-wrapper {
-  @apply flex flex-col items-center w-full bg-black top-0
+  @apply flex flex-col items-center w-full bg-gray-900 top-0;
 }
 </style>

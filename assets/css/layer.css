@@ -1,11 +1,11 @@
 .layer {
   @apply flex flex-row h-dvh w-dvw items-center justify-between font-sans text-white;
-  width: 80vw
+  width: 80vw;
 }
 
 .layer-name {
   @apply text-4xl;
-  flex: 2
+  flex: 2;
 }
 
 .layer-content {
@@ -14,5 +14,24 @@
 
   * {
     margin-bottom: 1rem;
+  }
+}
+
+.proj {
+  @apply flex flex-col h-dvh w-dvw items-start justify-normal font-sans
+   text-white;
+  width: 80vw;
+}
+
+.proj-name {
+  @apply text-4xl;
+  margin: 20vh 0px 3rem 0px;
+}
+
+.proj-content {
+  @apply flex flex-wrap;
+
+  .card {
+    flex: 1 0 20%;
   }
 }
