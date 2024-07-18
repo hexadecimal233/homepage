@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply overflow-x-hidden overflow-y-scroll bg-gray-800 bg-cover m-0 p-0;
+}
