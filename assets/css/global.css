@@ -11,7 +11,8 @@ a {
   -webkit-transition: border-color 0.2s ease-in-out;
   -ms-transition: border-color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
+  border-bottom: dotted 2px; /* If this was set to 1px, then phantom underlines will appear in my integrated 
+  display when showing the project links, idk why but this workaround just work */
   color: inherit;
   outline: 0;
   text-decoration: none;
