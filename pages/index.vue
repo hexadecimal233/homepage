@@ -8,6 +8,7 @@ const route = useRoute()
     <LayersDescription />
     <LayersLanguages />
     <LayersProjects />
+    <LayersDevices />
     <!--
     <img class="placeholder" src="//sdfsdf.dev/600x400.jpg"></img>
     -->
@@ -17,6 +18,6 @@ const route = useRoute()
 
 <style>
 .page-wrapper {
-  @apply flex flex-col items-center w-full bg-gray-900 top-0;
+  @apply flex flex-col items-center w-full bg-gray-800 top-0;
 }
 </style>

@@ -6,6 +6,22 @@ body {
   @apply overflow-x-hidden overflow-y-scroll bg-gray-800 bg-cover m-0 p-0;
 }
 
+a {
+  -moz-transition: border-color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  color: inherit;
+  outline: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  border-color: transparent;
+}
+
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 10px;

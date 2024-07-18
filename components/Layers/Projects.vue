@@ -1,10 +1,11 @@
 <template>
   <div class="proj">
-    <div class="proj-name">作为一个开发者...<br>
-      正在学习全栈开发... 我参与开发的项目
+    <div class="proj-name">
+      作为一个开发者,<br>
+      正在学习全栈开发...<br>
+      我参与开发的项目:
     </div>
     <div class="proj-content">
-
       <div class="card">
         <a href="https://github.com/hexadecimal233/bili-signature" class="proj-title">bili-signature</a>
         <div class="proj-desc">自动改签名~</div>
