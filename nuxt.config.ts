@@ -8,13 +8,6 @@ export default defineNuxtConfig({
     "~/assets/css/layer.css",
     "~/assets/css/card.css",
   ],
-  runtimeConfig: {
-    public: {
-      motion: {
-        directives: {},
-      },
-    },
-  },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {

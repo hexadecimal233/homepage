@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{
-  layerName: string;
-}>();
+  layerName: string
+}>()
 </script>
 
 <template>
