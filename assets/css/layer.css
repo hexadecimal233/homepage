@@ -55,7 +55,7 @@
 }
 
 .proj-content {
-  @apply flex flex-wrap overflow-y-auto;
+  @apply flex flex-wrap overflow-y-auto overflow-hidden;
   padding: 1rem;
 
   .card {

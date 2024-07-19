@@ -3,12 +3,12 @@ import { BilibiliIcon, DiscordIcon, GitHubIcon, MailDotRuIcon, SteamIcon, Telegr
 </script>
 
 <template>
-  <div class="flex flex-col h-dvh w-dvw items-center justify-center">
+  <div class="flex flex-col h-dvh w-dvw items-center justify-center text-white">
     <div class="text-center">
       <div class="text-4xl text-yellow-100 ">Ciallo ～(∠・ω< )⌒★！</div>
-          <div class="text-sm text-white">(Swipe down)</div>
-          <div class="fadingbutton text-white">↓</div>
-          <div class="text-white">如何找到我 (/≧▽≦)/</div>
+          <div class="text-sm">(Swipe down)</div>
+          <div class="fadingbutton">↓</div>
+          <div>如何找到我 (/≧▽≦)/</div>
           <div class="flex items-center justify-center *:m-2">
             <a target="_blank" href="mailto:contact@onlyra1n.top">
               <MailDotRuIcon style="fill: white" />
@@ -49,7 +49,7 @@ import { BilibiliIcon, DiscordIcon, GitHubIcon, MailDotRuIcon, SteamIcon, Telegr
 
 
 
-<style lang="css">
+<style>
 @keyframes blink {
   0% {
     opacity: 0;
