@@ -35,6 +35,11 @@ export default defineNuxtConfig({
           type: "image/png",
           href: "https://gravatar.loli.net/avatar/daca850545a454e39660992d1163e88e?size=256&cache=1718432418567",
         },
+        // We use google fonts here
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css?family=Montserrat&display=swap",
+        },
       ],
     },
   },

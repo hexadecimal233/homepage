@@ -1,5 +1,6 @@
 <template>
   <div class="layer">
+    <div class="layer-bg">cc</div>
     <div class="layer-name">Who Am I?</div>
     <div class="layer-content">
       <p>16 岁(♂) 平平无奇高中生~ | 去追寻自己喜爱的 | INFP-A</p>

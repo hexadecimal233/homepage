@@ -1,5 +1,5 @@
 .layer {
-  @apply flex flex-row h-dvh w-dvw items-center justify-between font-sans text-white;
+  @apply flex flex-row h-dvh w-dvw items-center justify-between text-white;
   width: 80vw;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .proj {
-  @apply flex flex-col h-dvh w-dvw font-sans
+  @apply flex flex-col h-dvh w-dvw
    text-white;
   width: calc(80vw + 1rem); /* leave 1rem for the padding below*/
 }

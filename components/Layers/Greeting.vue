@@ -4,7 +4,7 @@ import { BilibiliIcon, DiscordIcon, GitHubIcon, MailDotRuIcon, SteamIcon, Telegr
 
 <template>
   <div class="flex flex-col h-dvh w-dvw items-center justify-center">
-    <div class="font-sans text-center">
+    <div class="text-center">
       <div class="text-4xl text-yellow-100 ">Ciallo ～(∠・ω< )⌒★！</div>
           <div class="text-sm text-white">(Swipe down)</div>
           <div class="fadingbutton text-white">↓</div>

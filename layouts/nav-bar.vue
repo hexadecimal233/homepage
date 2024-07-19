@@ -1,7 +1,8 @@
 <template>
   <div class="navigation">
-    <p class="text-pink-300 nav-item flex-1">PHEQOR</p>
+    <NuxtLink to="/" class="text-pink-300 nav-item flex-1">PHEQOR</NuxtLink>
     <NuxtLink to="https://me.onlyra1n.top/" target="_blank" class="text-pink-300 nav-item flex-1">博客</NuxtLink>
+    <NuxtLink to="/donation" class="text-pink-300 nav-item flex-1">捐助</NuxtLink>
   </div>
   <div>
     <slot />
