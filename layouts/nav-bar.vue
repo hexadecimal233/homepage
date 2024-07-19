@@ -21,6 +21,7 @@
   height: 3rem;
   background-color: #fff7;
   backdrop-filter: blur(5px);
+  z-index: 999;
 }
 
 .nav-item {

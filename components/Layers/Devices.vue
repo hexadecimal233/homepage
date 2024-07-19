@@ -1,7 +1,7 @@
 <template>
   <div class="layer">
     <div class="layer-name">装备Showcase~</div>
-    <div class="layer-content">
+    <div v-motion-slide-visible-once-right class="layer-content">
       <img src="https://img.shields.io/badge/OS-Windows_11-white?style=flat-square&logo=windows&color=0078d4"></img>
       <img src="https://img.shields.io/badge/Android-MIUI-ff9600?style=flat-square&logo=xiaomi&logoColor=ffffff"></img>
       <img src="https://img.shields.io/badge/Alienware-M15_R5-ff9600?style=flat-square&logo=alienware"></img>

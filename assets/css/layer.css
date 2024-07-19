@@ -1,6 +1,10 @@
 .layer {
   @apply flex flex-row h-dvh w-dvw items-center justify-between text-white;
   width: 80vw;
+
+  * {
+    z-index: 2;
+  }
 }
 
 .layer-name {
@@ -16,6 +20,26 @@
     margin-bottom: 1rem;
   }
 }
+
+.layer-content > .visible {
+  opacity: 1;
+  transform: none;
+}
+
+/*
+
+.layer::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: do;
+  border-width: 100vh 70.5vw 0 0;
+  border-color: #7048e8 transparent transparent transparent;
+}
+
+*/
 
 .proj {
   @apply flex flex-col h-dvh w-dvw

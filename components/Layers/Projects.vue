@@ -5,7 +5,7 @@
       正在学习全栈开发...<br>
       我参与开发的项目:
     </div>
-    <div class="proj-content">
+    <div v-motion-slide-visible-once-bottom class="proj-content">
       <div class="card">
         <a href="https://github.com/hexadecimal233/bili-signature" class="proj-title">bili-signature</a>
         <div class="proj-desc">自动改签名~</div>

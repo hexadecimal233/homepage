@@ -1,8 +1,7 @@
 <template>
   <div class="layer">
-    <div class="layer-bg">cc</div>
     <div class="layer-name">Who Am I?</div>
-    <div class="layer-content">
+    <div v-motion-slide-visible-once-right class="layer-content">
       <p>16 岁(♂) 平平无奇高中生~ | 去追寻自己喜爱的 | INFP-A</p>
       <p>喜欢：编曲、设计、开发 (写代码和一些逆向)、游戏</p>
       <p>正在学习的：混剪、音频可视化、编曲、平面设计、3D 制作、绘画、音 MAD、网络安全、全栈开发、Vue、游戏开发...</p>
