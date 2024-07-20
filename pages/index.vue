@@ -1,12 +1,11 @@
 <script setup lang="ts">
-const route = useRoute()
 </script>
 
 <template>
   <div class="page-wrapper">
     <SectionsGreeting />
 
-    <BaseSection name="Who Am I?">
+    <RowSection name="Who Am I?">
       <p>16 岁(♂) 平平无奇高中生~ | 去追寻自己喜爱的 | INFP-A</p>
       <p>喜欢：编曲、设计、开发 (写代码和一些逆向)、游戏</p>
       <p>
@@ -20,24 +19,17 @@ const route = useRoute()
         头像是
         <NuxtLink href="https://x.com/Colon_BR">ころんびぁ</NuxtLink> 的！
       </p>
-    </BaseSection>
+    </RowSection>
 
-    <BaseSection name="XX会什么语言呢">
-      <img
-        src="https://img.shields.io/badge/Chinese_(Simplified)-4abf8a?style=flat-square&label=🏠简体中文"
-      />
-      <img
-        src="https://img.shields.io/badge/English_(US)-4abf8a?logo=&style=flat-square&label=English"
-      />
-      <img
-        src="https://img.shields.io/badge/Japanese-4abf8a?logo=&style=flat-square&label=日本語（划掉）"
-      />
+    <RowSection name="我用什么语言呢">
+      Chinese (Simplified) 🏠简体中文 English English
+      <span class="line-through">Japanese 日本語</span>
       <!-- TODO: Better Badges View-->
-    </BaseSection>
+    </RowSection>
 
-    <SectionsProjects />
+    <ProjectsSection />
 
-    <BaseSection name="装备Showcase">
+    <RowSection name="装备Showcase">
       <img
         src="https://img.shields.io/badge/OS-Windows_11-white?style=flat-square&logo=windows&color=0078d4"
       />
@@ -53,12 +45,12 @@ const route = useRoute()
       <img
         src="https://img.shields.io/badge/Pioneer-DDJ_400-ee2222?style=flat-square"
       />
-    </BaseSection>
+    </RowSection>
   </div>
 </template>
 
 <style>
 .page-wrapper {
-  @apply flex flex-col items-center justify-center bg-gray-800 top-0;
+  @apply flex flex-col items-center justify-center bg-gray-800;
 }
 </style>

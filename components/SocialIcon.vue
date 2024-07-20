@@ -21,7 +21,7 @@ defineProps<{
     transform: scale(1.15);
     background: radial-gradient(#ffffff4f, #3984ff00 80%);
     > svg {
-      fill: green;
+      fill: var(--secondary-color);
     }
   }
 
@@ -29,7 +29,7 @@ defineProps<{
     transition: 0.2s;
     width: 28px;
     height: 28px;
-    fill: white;
+    fill: var(--primary-color);
   }
 }
 </style>

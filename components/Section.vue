@@ -1,17 +1,20 @@
-<script setup lang="ts">
-defineProps<{
-  name: string
-}>()
-</script>
-
 <template>
   <div class="section">
-    <div style="overflow: hidden">
+    <div class="section-main">
+      <slot />
+    </div>
+
+    <div style="overflow: hidden; position: absolute; bottom: 0">
       <svg
         preserveAspectRatio="none"
         viewBox="0 0 1200 120"
         xmlns="http://www.w3.org/2000/svg"
-        style="fill: #1f2937; width: 100vw; height: 75px"
+        style="
+          fill: var(--background-secondary);
+          width: 200vw;
+          height: 75px;
+          transform: rotate(180deg);
+        "
       >
         <path
           d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
@@ -26,47 +29,23 @@ defineProps<{
         />
       </svg>
     </div>
-
-    <div class="section-main">
-      <div class="section-name">{{ name }}</div>
-      <div v-motion-slide-visible-once-right class="section-content">
-        <slot />
-      </div>
-    </div>
   </div>
 </template>
 
 <style>
 .section {
-  @apply h-dvh w-dvw;
-  background: linear-gradient(to bottom, #2d3643, #1f2937);
-}
+  /* why relative: 子元素置底部 */
+  @apply h-dvh w-dvw relative;
+  background: linear-gradient(
+    to bottom,
+    var(--background-secondary),
+    var(--background-color)
+  );
+  overflow: hidden; /* https://github.com/vueuse/motion/issues/214  */
 
-.section-main {
-  @apply flex flex-row items-center justify-between text-white;
-
-  > * {
+  .section-main > * {
     margin: 10vw;
     z-index: 2;
   }
-}
-
-.section-name {
-  @apply text-4xl;
-  flex: 2;
-}
-
-.section-content {
-  @apply flex flex-col;
-  flex: 1;
-
-  > * {
-    margin-bottom: 1rem;
-  }
-}
-
-.section-content > .visible {
-  opacity: 1;
-  transform: none;
 }
 </style>

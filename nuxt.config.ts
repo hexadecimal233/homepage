@@ -5,8 +5,8 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@vueuse/motion/nuxt", "@nuxt/image"],
   css: [
     "~/assets/css/global.css",
-    "~/assets/css/section.css",
     "~/assets/css/card.css",
+    "~/assets/css/colors.css",
   ],
   app: {
     pageTransition: { name: "page", mode: "out-in" },
