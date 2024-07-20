@@ -1,13 +1,13 @@
 <template>
   <div class="navigation">
-    <NuxtLink to="/" class="text-pink-300 nav-item flex-1">PHEQOR</NuxtLink>
-    <NuxtLink to="https://me.onlyra1n.top/" target="_blank" class="text-pink-300 nav-item flex-1">博客</NuxtLink>
-    <NuxtLink to="/donation" class="text-pink-300 nav-item flex-1">捐助</NuxtLink>
+    <NuxtLink to="/" class="nav-item">PHEQOR</NuxtLink>
+    <NuxtLink to="https://me.onlyra1n.top/" target="_blank" class="nav-item">博客</NuxtLink
+    >
+    <NuxtLink to="/donation" class="nav-item">捐助</NuxtLink>
   </div>
   <div>
     <slot />
   </div>
-
 </template>
 
 <style>
@@ -17,16 +17,21 @@
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  padding-left: 10vw;
   height: 3rem;
-  background-color: #fff7;
+  background-color: #b8b8b833;
+  box-shadow: 0 0 5px 0 black;
   backdrop-filter: blur(5px);
   z-index: 999;
 }
 
+
+
 .nav-item {
+  text-align: center;
   padding: 10px;
-  width: max-content;
+  color: var(--text-color);
+  padding-right: 53px;
 }
 </style>
 

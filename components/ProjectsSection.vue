@@ -1,6 +1,6 @@
 <template>
   <Section>
-    <div class="flex flex-col text-white">
+    <div class="flex flex-col">
       <div class="proj-name">
         作为一个开发者,<br />
         正在学习全栈开发...<br />

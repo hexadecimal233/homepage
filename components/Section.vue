@@ -10,7 +10,7 @@
         viewBox="0 0 1200 120"
         xmlns="http://www.w3.org/2000/svg"
         style="
-          fill: var(--background-secondary);
+          fill: var(--bg-secondary);
           width: 200vw;
           height: 75px;
           transform: rotate(180deg);
@@ -38,14 +38,15 @@
   @apply h-dvh w-dvw relative;
   background: linear-gradient(
     to bottom,
-    var(--background-secondary),
-    var(--background-color)
+    var(--bg-secondary),
+    var(--bg-color)
   );
   overflow: hidden; /* https://github.com/vueuse/motion/issues/214  */
 
   .section-main > * {
     margin: 10vw;
     z-index: 2;
+    color: var(--text-color)
   }
 }
 </style>

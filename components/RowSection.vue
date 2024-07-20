@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <Section>
-    <div class="flex flex-row items-center justify-between text-white">
+    <div class="flex flex-row items-center justify-between">
       <div class="section-name">{{ name }}</div>
       <div v-motion-slide-visible-once-right class="section-content">
         <slot />

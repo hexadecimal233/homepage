@@ -14,15 +14,13 @@ import {
 
 <template>
   <Section>
-    <div
-      class="flex flex-col items-center justify-center text-center text-white"
-    >
+    <div class="flex flex-col items-center justify-center text-center">
       <img
         src="https://gravatar.loli.net/avatar/daca850545a454e39660992d1163e88e?size=256&cache=1718432418567"
-        class="w-40 h-40 m-16 rounded-full border-4 border-white hover:rotate-[1turn] transition-transform duration-500"
+        class="w-40 h-40 m-16 rounded-full border-4 border-blue hover:rotate-[1turn] transition-transform duration-500"
         title="avatar"
       />
-      <div class="text-4xl text-yellow-100">Ciallo ～(∠・ω&lt; )⌒★！</div>
+      <div class="text-4xl">Ciallo ～(∠・ω&lt; )⌒★！</div>
       <div class="text-sm">(Swipe down)</div>
       <div class="fadingbutton">↓</div>
       <div>如何找到我 (/≧▽≦)/</div>
