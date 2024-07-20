@@ -6,7 +6,7 @@ const route = useRoute()
   <div class="page-wrapper">
     <SectionsGreeting />
 
-    <BaseSection layer-name="Who Am I?">
+    <BaseSection name="Who Am I?">
       <p>16 岁(♂) 平平无奇高中生~ | 去追寻自己喜爱的 | INFP-A</p>
       <p>喜欢：编曲、设计、开发 (写代码和一些逆向)、游戏</p>
       <p>
@@ -22,7 +22,7 @@ const route = useRoute()
       </p>
     </BaseSection>
 
-    <BaseSection layer-name="XX会什么语言呢">
+    <BaseSection name="XX会什么语言呢">
       <img
         src="https://img.shields.io/badge/Chinese_(Simplified)-4abf8a?style=flat-square&label=🏠简体中文"
       />
@@ -37,7 +37,7 @@ const route = useRoute()
 
     <SectionsProjects />
 
-    <BaseSection layer-name="装备Showcase">
+    <BaseSection name="装备Showcase">
       <img
         src="https://img.shields.io/badge/OS-Windows_11-white?style=flat-square&logo=windows&color=0078d4"
       />

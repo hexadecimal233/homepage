@@ -2,10 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@vueuse/motion/nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "@vueuse/motion/nuxt", "@nuxt/image"],
   css: [
     "~/assets/css/global.css",
-    "~/assets/css/layer.css",
+    "~/assets/css/section.css",
     "~/assets/css/card.css",
   ],
   app: {
