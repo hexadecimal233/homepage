@@ -1,6 +1,6 @@
 <template>
   <Section>
-    <div class="flex flex-col">
+    <div class="flex-col">
       <div class="proj-name">
         作为一个开发者,<br />
         正在学习全栈开发...<br />
@@ -65,8 +65,9 @@
 }
 
 .proj-content {
-  @apply flex flex-wrap overflow-y-auto overflow-hidden;
+  @apply flex flex-wrap overflow-y-auto ;
   padding: 1rem;
+  height: 60vh;
 
   .card {
     flex: 1 0 auto;
@@ -98,7 +99,7 @@
 }
 
 .card.archive {
-  filter: brightness(0.9);
+  filter: brightness(0.94);
 }
 
 .card.archive > .proj-title::before {
@@ -106,5 +107,6 @@
   margin-right: 4px;
 }
 
-/* TODO: 你到底用不用Tailwind啊？？？？？ */
+/* TODO: 你到底用不用Tailwind啊？？？？？
+TODO: Flex 和 Flex-col加载顺序????? */
 </style>

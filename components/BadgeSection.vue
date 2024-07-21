@@ -7,8 +7,8 @@ defineProps<{
 
 <template>
   <Section>
-    <div class="flex flex-row items-center justify-between">
-      <div class="section-name">{{ name }}</div>
+    <div class="items-center justify-between">
+      <div class="icon-section-name">{{ name }}</div>
 
       <!-- TODO: 如果是ul+li做这种效果怎么样？ 加个逐个划入 -->
 
@@ -20,32 +20,32 @@ defineProps<{
 </template>
 
 <style>
-.section-name {
+.icon-section-name {
   @apply text-4xl;
-  flex: 5;
+  flex: 4;
+  margin: 3rem;
 }
 
 .icon-items {
-  @apply flex flex-wrap overflow-y-auto overflow-hidden text-3xl;
-  flex: 4;
-
-  @media screen and (max-width: 736px) {
-    > * {
-      width: 100%;
-    }
-  }
+  @apply flex flex-wrap overflow-y-auto text-3xl;
+  flex: 6;
 }
 
 .icon-item {
-  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
   position: relative;
   margin: 1rem;
   border-radius: 20px;
   background-color: var(--sub-bg);
+  line-height: 100%;
 
   > * {
+    display: flex;
+    align-items: center;
     text-align: center;
     padding-inline: 1rem;
+    padding-block: 0.25rem;
   }
 
   > *:nth-child(1) {
@@ -54,15 +54,6 @@ defineProps<{
   }
   > *:nth-child(2) {
     margin-right: 1rem;
-  }
-}
-
-img.icon-item-icon {
-  width: 28px;
-
-  svg {
-    transition: 0.2s;
-    width: 100%;
   }
 }
 </style>

@@ -4,8 +4,7 @@ const language = [
   "<span>English</span><span>英语</span>",
   "<del>Japanese</del><del>日本語</del>",
 ]
-const gears = [
-  '<span class=".icon-item-icon" v-html="siAndroid.svg" />',
+const gear = [
   "<span>OS</span><span>Windows 11</span>",
   "<span>Android</span><span>MIUI</span>",
   "<span>Laptop</span><span>Alienware M15-R5</span>",
@@ -38,13 +37,13 @@ const gears = [
 
     <ProjectsSection />
 
-    <BadgeSection name="我的装备" :content="gears"> </BadgeSection>
+    <BadgeSection name="我的装备" :content="gear"> </BadgeSection>
   </div>
 </template>
 
 <style>
 .page-wrapper {
-  @apply flex flex-col items-center justify-center bg-gray-800;
+  @apply flex flex-col items-center justify-center;
 
   a {
     border-bottom: dotted 2px; /* If this was set to 1px, then phantom underlines will appear in my integrated 

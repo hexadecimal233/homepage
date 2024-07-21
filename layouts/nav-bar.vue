@@ -1,8 +1,7 @@
 <template>
   <div class="navigation">
     <NuxtLink to="/" class="nav-item">PHEQOR</NuxtLink>
-    <NuxtLink to="https://me.onlyra1n.top/" target="_blank" class="nav-item">博客</NuxtLink
-    >
+    <a href="https://me.onlyra1n.top/" target="_blank" class="nav-item">博客</a>
     <NuxtLink to="/donation" class="nav-item">捐助</NuxtLink>
   </div>
   <div>
@@ -24,8 +23,6 @@
   backdrop-filter: blur(5px);
   z-index: 999;
 }
-
-
 
 .nav-item {
   text-align: center;

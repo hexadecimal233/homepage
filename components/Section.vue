@@ -1,3 +1,9 @@
+<script setup lang="ts">
+defineProps<{
+  useColumn?: any
+}>()
+</script>
+
 <template>
   <div class="section">
     <div class="section-main">
@@ -35,18 +41,24 @@
 <style>
 .section {
   /* why relative: 子元素置底部 */
-  @apply h-dvh w-dvw relative;
-  background: linear-gradient(
-    to bottom,
-    var(--bg-secondary),
-    var(--bg-color)
-  );
+  @apply h-dvh w-dvw relative flex items-center justify-center;
+  background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-color));
   overflow: hidden; /* https://github.com/vueuse/motion/issues/214  */
 
-  .section-main > * {
-    margin: 10vw;
-    z-index: 2;
-    color: var(--text-color)
+  .section-main {
+    > * {
+      display: flex;
+      margin-inline: 10vw;
+      margin-bottom: 10vh;
+      z-index: 2;
+      color: var(--text-color);
+
+      @media screen and (max-width: 736px) {
+        & {
+          flex-direction: column;
+        }
+      }
+    }
   }
 }
 </style>

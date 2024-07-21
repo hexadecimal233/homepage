@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <Section>
-    <div class="flex flex-row items-center justify-between">
+    <div class="items-center justify-between">
       <div class="section-name">{{ name }}</div>
       <div v-motion-slide-visible-once-right class="section-content">
         <slot />
@@ -19,6 +19,7 @@ defineProps<{
 .section-name {
   @apply text-4xl;
   flex: 2;
+  margin: 3rem;
 }
 
 .section-content {
@@ -35,3 +36,5 @@ defineProps<{
   transform: none;
 }
 </style>
+
+<!-- TODO: standardize margin & better section name (class + inherit) -->
