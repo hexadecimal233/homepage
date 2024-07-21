@@ -1,8 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const language = [
+  "<span>Chinese (Simplified)</span><span>🏠简体中文</span>",
+  "<span>English</span><span>英语</span>",
+  "<del>Japanese</del><del>日本語</del>",
+]
+const gears = [
+  '<span class=".icon-item-icon" v-html="siAndroid.svg" />',
+  "<span>OS</span><span>Windows 11</span>",
+  "<span>Android</span><span>MIUI</span>",
+  "<span>Laptop</span><span>Alienware M15-R5</span>",
+  "<span>Phone</span><span>Redmi K60Pro</span>",
+  "<span>Pioneer</span><span>DDJ 400</span>",
+]
+</script>
 
 <template>
   <div class="page-wrapper">
-    <SectionsGreeting />
+    <Greeting />
 
     <RowSection name="Who Am I?">
       <p>16 岁(♂) 平平无奇高中生~ | 去追寻自己喜爱的 | INFP-A</p>
@@ -16,40 +30,30 @@
       <p>（其实是想不出什么好的 ID 了.....）</p>
       <p>
         头像是
-        <NuxtLink href="https://x.com/Colon_BR">ころんびぁ</NuxtLink> 的！
+        <a href="https://x.com/Colon_BR">ころんびぁ</a> 的！
       </p>
     </RowSection>
 
-    <RowSection name="我用什么语言呢">
-      Chinese (Simplified) 🏠简体中文 English English
-      <span class="line-through">Japanese 日本語</span>
-      <!-- TODO: Better Badges View-->
-    </RowSection>
+    <BadgeSection name="我用什么语言呢" :content="language"> </BadgeSection>
 
     <ProjectsSection />
 
-    <RowSection name="装备Showcase">
-      <img
-        src="https://img.shields.io/badge/OS-Windows_11-white?style=flat-square&logo=windows&color=0078d4"
-      />
-      <img
-        src="https://img.shields.io/badge/Android-MIUI-ff9600?style=flat-square&logo=xiaomi&logoColor=ffffff"
-      />
-      <img
-        src="https://img.shields.io/badge/Alienware-M15_R5-ff9600?style=flat-square&logo=alienware"
-      />
-      <img
-        src="https://img.shields.io/badge/Redmi-K60Pro-ff9600?style=flat-square&logo=xiaomi&logoColor=ffffff"
-      />
-      <img
-        src="https://img.shields.io/badge/Pioneer-DDJ_400-ee2222?style=flat-square"
-      />
-    </RowSection>
+    <BadgeSection name="我的装备" :content="gears"> </BadgeSection>
   </div>
 </template>
 
 <style>
 .page-wrapper {
   @apply flex flex-col items-center justify-center bg-gray-800;
+
+  a {
+    border-bottom: dotted 2px; /* If this was set to 1px, then phantom underlines will appear in my integrated 
+  display when showing the project links, idk why but this workaround just work */
+    outline: 0;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
 }
 </style>

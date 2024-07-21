@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@vueuse/motion/nuxt", "@nuxt/image"],
   css: [
     "~/assets/css/global.css",
-    "~/assets/css/card.css",
     "~/assets/css/colors.css",
   ],
   app: {

@@ -20,7 +20,7 @@
   padding-left: 10vw;
   height: 3rem;
   background-color: #b8b8b833;
-  box-shadow: 0 0 5px 0 black;
+  box-shadow: 0 0 5px 0 var(--shadow-color);
   backdrop-filter: blur(5px);
   z-index: 999;
 }

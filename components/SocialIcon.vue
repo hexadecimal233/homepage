@@ -8,7 +8,9 @@ defineProps<{
 </script>
 
 <template>
-  <a class="social-icon" target="_blank" :href="href" v-html="icon.svg" />
+  <a class="social-icon" target="_blank" :href="href">
+    <span v-html="icon.svg" />
+  </a>
 </template>
 
 <style>
@@ -16,22 +18,19 @@ defineProps<{
 
 .social-icon {
   transition: 0.2s;
+  width: 28px;
 
   &:hover {
     transform: scale(1.15);
-    background: radial-gradient(#ffffff4f, #3984ff00 80%);
-    > svg {
-      fill: var(--secondary-color);
+    svg {
+      fill: var(--hover-color);
     }
   }
 
-  > svg {
+  svg {
     transition: 0.2s;
-    width: 28px;
-    height: 28px;
+    width: 100%;
     fill: var(--primary-color);
   }
 }
 </style>
-
-<!-- TODO: 换掉巨丑的配色 -->

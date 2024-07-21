@@ -73,5 +73,38 @@
   }
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  width: 20rem;
+  background-color: var(--sub-bg);
+  border-radius: 25px;
+  box-shadow: 0px 0px 12px 1px var(--shadow-color);
+  margin: 0 1rem 1rem 0;
+
+  * {
+    @apply p-2 mb-2;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .proj-title {
+    @apply text-2xl;
+  }
+
+  .proj-desc {
+    @apply text-base;
+  }
+}
+
+.card.archive {
+  filter: brightness(0.9);
+}
+
+.card.archive > .proj-title::before {
+  content: "📦";
+  margin-right: 4px;
+}
+
 /* TODO: 你到底用不用Tailwind啊？？？？？ */
 </style>
