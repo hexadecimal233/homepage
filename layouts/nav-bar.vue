@@ -11,24 +11,10 @@
 
 <style>
 .navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  padding-left: 10vw;
-  height: 3rem;
-  background-color: #b8b8b833;
-  box-shadow: 0 0 5px 0 var(--shadow-color);
-  backdrop-filter: blur(5px);
-  z-index: 999;
+  @apply fixed w-full flex h-12 bg-[#b8b8b833] shadow-[0_0_5px_0_var(--shadow-color)] backdrop-blur-[5px] z-[999] pl-[10vw] left-0 top-0;
 }
-
 .nav-item {
-  text-align: center;
-  padding: 10px;
-  color: var(--text-color);
-  padding-right: 53px;
+  @apply text-center text-[color:var(--text-color)] pr-[53px] p-2.5;
 }
 </style>
 

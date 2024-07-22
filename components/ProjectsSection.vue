@@ -58,55 +58,33 @@
 
 <style>
 .proj-name {
+  @apply mt-0 mb-4 mx-0 pb-4 border-b-[solid];
   @apply text-4xl;
-  padding-bottom: 1rem;
-  margin: 0 0 1rem 0;
-  border-bottom: solid 2px;
 }
-
 .proj-content {
+  @apply h-[60vh] p-4;
   @apply flex flex-wrap overflow-y-auto;
-  padding: 1rem;
-  height: 60vh;
-
-  .card {
-    flex: 1 0 auto;
-  }
 }
-
+.proj-content .card {
+  @apply flex-[1_0_auto];
+}
 .card {
-  display: flex;
-  flex-direction: column;
-  height: 10rem;
-  width: 20rem;
-  background-color: var(--sub-bg);
-  border-radius: 25px;
-  box-shadow: 0px 0px 12px 1px var(--shadow-color);
-  margin: 0 1rem 1rem 0;
-
-  * {
-    @apply p-2 mb-2;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .proj-title {
-    @apply text-2xl;
-  }
-
-  .proj-desc {
-    @apply text-base;
-  }
+  @apply flex flex-col h-40 w-80 bg-[color:var(--sub-bg)] shadow-[0px_0px_12px_1px_var(--shadow-color)] ml-0 mr-4 mt-0 mb-4 rounded-[25px];
 }
-
+.card * {
+  @apply p-2 mb-2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card .proj-title {
+  @apply text-2xl;
+}
+.card .proj-desc {
+  @apply text-base;
+}
 .card.archive {
-  filter: brightness(0.94);
+  @apply brightness-[0.94];
 }
-
 .card.archive > .proj-title::before {
-  content: "📦";
-  margin-right: 4px;
+  @apply content-["📦"] mr-1;
 }
-
-/* TODO: 你到底用不用Tailwind啊？？？？？
-TODO: Flex 和 Flex-col加载顺序????? */
 </style>

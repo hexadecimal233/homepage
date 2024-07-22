@@ -44,15 +44,11 @@ const gear = [
 <style>
 .page-wrapper {
   @apply flex flex-col items-center justify-center;
-
-  a {
-    border-bottom: dotted 2px; /* If this was set to 1px, then phantom underlines will appear in my integrated 
+}
+.page-wrapper a {
+  @apply border-b-[dotted] hover:border-transparent;
+  /* If this was set to 1px, then phantom underlines will appear in my integrated 
   display when showing the project links, idk why but this workaround just work */
-    outline: 0;
-
-    &:hover {
-      border-color: transparent;
-    }
-  }
+  outline: 0;
 }
 </style>

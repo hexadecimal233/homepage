@@ -71,25 +71,14 @@ import {
 }
 
 .fadingbutton {
-  animation: blink 1s 0s infinite;
+  @apply animate-[blink_1s_0s_infinite];
 }
-
 .qqid::after {
-  position: absolute;
-  content: "QQ号：2593828650";
-  text-align: center;
-  width: 12rem;
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 5px;
+  @apply absolute content-["QQ号：2593828650"] text-center w-48 border text-[black] opacity-0 -translate-x-2/4 translate-y-[-185%] transition-[0.25s] duration-[cubic-bezier(0.25,0.85,0.46,0.96)] p-[5px] rounded-[5px] border-solid;
   background: white;
-  color: black;
-  opacity: 0;
-  transform: translateX(-50%) translateY(-185%);
-  transition: 0.25s cubic-bezier(0.25, 0.85, 0.46, 0.96);
+}
+.qqid:hover::after {
+  @apply opacity-100;
 }
 
-.qqid:hover::after {
-  opacity: 1;
-}
 </style>
