@@ -16,21 +16,14 @@ defineProps<{
 <style>
 /* 悬停放大 */
 
+/* 悬停放大 */
 .social-icon {
-  transition: 0.2s;
-  width: 28px;
-
-  &:hover {
-    transform: scale(1.15);
-    svg {
-      fill: var(--hover-color);
-    }
-  }
-
-  svg {
-    transition: 0.2s;
-    width: 100%;
-    fill: var(--primary-color);
-  }
+  @apply transition-[0.2s] w-7 hover:scale-[1.15];
+}
+.social-icon:hover svg {
+  @apply fill-[var(--hover-color)];
+}
+.social-icon svg {
+  @apply transition-[0.2s] w-full fill-[var(--primary-color)];
 }
 </style>
