@@ -34,17 +34,25 @@
 
 <style>
 .section {
-  @apply overflow-hidden; /* why relative: 子元素置底部 */
+  /* why relative: 子元素置底部 */
   @apply h-dvh w-dvw relative flex items-center justify-center;
   background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-color));
-} /* https://github.com/vueuse/motion/issues/214  */
-.section .section-main > * {
-  @apply flex z-[2] text-[color:var(--text-color)] mb-[10vh];
-  margin-inline: 10vw;
-}
-@media screen and (max-width: 736px) {
-  .section .section-main > * {
-    @apply flex-col;
+  overflow: hidden; /* https://github.com/vueuse/motion/issues/214  */
+
+  .section-main {
+    > * {
+      display: flex;
+      margin-inline: 10vw;
+      margin-bottom: 10vh;
+      z-index: 2;
+      color: var(--text-color);
+
+      @media screen and (max-width: 736px) {
+        & {
+          flex-direction: column;
+        }
+      }
+    }
   }
 }
 </style>

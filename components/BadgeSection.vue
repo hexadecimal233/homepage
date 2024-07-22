@@ -21,25 +21,39 @@ defineProps<{
 
 <style>
 .icon-section-name {
-  @apply flex-[4] m-12;
   @apply text-4xl;
+  flex: 4;
+  margin: 3rem;
 }
+
 .icon-items {
-  @apply flex-[6];
   @apply flex flex-wrap overflow-y-auto text-3xl;
+  flex: 6;
 }
+
 .icon-item {
-  @apply flex justify-center relative bg-[color:var(--sub-bg)] leading-[100%] m-4 rounded-[20px];
-}
-.icon-item > * {
-  @apply flex items-center text-center;
-  padding-inline: 1rem;
-  padding-block: 0.25rem;
-}
-.icon-item > *:nth-child(1) {
-  @apply bg-[color:var(--primary-color-d)] rounded-[20px];
-}
-.icon-item > *:nth-child(2) {
-  @apply mr-4;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 1rem;
+  border-radius: 20px;
+  background-color: var(--sub-bg);
+  line-height: 100%;
+
+  > * {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-inline: 1rem;
+    padding-block: 0.25rem;
+  }
+
+  > *:nth-child(1) {
+    border-radius: 20px;
+    background-color: var(--primary-color-d);
+  }
+  > *:nth-child(2) {
+    margin-right: 1rem;
+  }
 }
 </style>
