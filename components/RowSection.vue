@@ -17,18 +17,22 @@ defineProps<{
 
 <style>
 .section-name {
-  @apply flex-[2] m-12;
   @apply text-4xl;
+  flex: 2;
+  margin: 3rem;
 }
+
 .section-content {
-  @apply flex-1;
   @apply flex flex-col;
+  flex: 1;
+
+  > * {
+    margin-bottom: 1rem;
+  }
 }
-.section-content > * {
-  @apply mb-4;
-}
+
 .section-content > .visible {
-  @apply opacity-100;
+  opacity: 1;
   transform: none;
 }
 </style>
