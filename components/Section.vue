@@ -1,9 +1,3 @@
-<script setup lang="ts">
-defineProps<{
-  useColumn?: any
-}>()
-</script>
-
 <template>
   <div class="section">
     <div class="section-main">
@@ -62,5 +56,3 @@ defineProps<{
   }
 }
 </style>
-
-<!-- TODO: 手机自动垂直排布 -->

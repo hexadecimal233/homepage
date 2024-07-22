@@ -65,7 +65,7 @@
 }
 
 .proj-content {
-  @apply flex flex-wrap overflow-y-auto ;
+  @apply flex flex-wrap overflow-y-auto;
   padding: 1rem;
   height: 60vh;
 
