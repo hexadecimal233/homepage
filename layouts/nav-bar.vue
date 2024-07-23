@@ -4,9 +4,7 @@
     <a href="https://me.onlyra1n.top/" target="_blank" class="nav-item">博客</a>
     <NuxtLink to="/donation" class="nav-item">捐赠</NuxtLink>
   </div>
-  <div>
-    <slot />
-  </div>
+  <slot />
 </template>
 
 <style>
