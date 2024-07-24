@@ -2,8 +2,6 @@
   <Section>
     <div class="flex-col">
       <div class="proj-name">
-        作为一个开发者,<br />
-        正在学习全栈开发...<br />
         我参与开发的项目:
       </div>
       <div v-motion-slide-visible-once-bottom class="proj-content">
@@ -91,6 +89,7 @@
 
   .proj-title {
     @apply text-2xl;
+    border-bottom: solid 2px;
   }
 
   .proj-desc {

@@ -9,9 +9,6 @@ defineProps<{
   <Section>
     <div class="items-center justify-between">
       <div class="icon-section-name">{{ name }}</div>
-
-      <!-- TODO: 如果是ul+li做这种效果怎么样？ 加个逐个划入 -->
-
       <Motion preset="slideVisibleOnceRight" class="icon-items">
         <div class="icon-item" v-for="c in content" v-html="c"></div>
       </Motion>
