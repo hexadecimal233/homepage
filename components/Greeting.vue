@@ -55,7 +55,7 @@ import {
   </Section>
 </template>
 
-<style>
+<style scoped>
 @keyframes blink {
   0% {
     opacity: 0;

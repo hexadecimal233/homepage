@@ -16,7 +16,7 @@ defineProps<{
   </Section>
 </template>
 
-<style>
+<style scoped>
 .icon-section-name {
   @apply text-4xl;
   flex: 4;

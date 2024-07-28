@@ -54,7 +54,7 @@
   </Section>
 </template>
 
-<style>
+<style scoped>
 .proj-name {
   @apply text-4xl;
   padding-bottom: 1rem;

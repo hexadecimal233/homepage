@@ -7,7 +7,7 @@
   <slot />
 </template>
 
-<style>
+<style scoped>
 .navigation {
   position: fixed;
   top: 0;
@@ -23,9 +23,10 @@
 }
 
 .nav-item {
-  text-align: center;
+  display: flex;
+  align-items: center;
   padding: 10px;
   color: var(--text-color);
-  padding-right: 53px;
+  padding-right: 3rem;
 }
 </style>

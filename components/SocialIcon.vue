@@ -13,7 +13,7 @@ defineProps<{
   </a>
 </template>
 
-<style>
+<style scoped>
 /* 悬停放大 */
 
 .social-icon {
@@ -22,12 +22,12 @@ defineProps<{
 
   &:hover {
     transform: scale(1.15);
-    svg {
+    :deep(svg) {
       fill: var(--hover-color);
     }
   }
 
-  svg {
+  :deep(svg) {
     transition: 0.2s;
     width: 100%;
     fill: var(--primary-color);

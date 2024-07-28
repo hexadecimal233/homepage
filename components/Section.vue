@@ -32,9 +32,8 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .section {
-  /* why relative: 子元素置底部 */
   @apply h-dvh w-dvw relative flex items-center justify-center;
   background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-color));
   overflow: hidden; /* https://github.com/vueuse/motion/issues/214  */

@@ -16,7 +16,7 @@ defineProps<{
   </div>
 </template>
 
-<style>
+<style scoped>
 .qr-container {
   position: relative;
   width: 15rem;
