@@ -2,7 +2,7 @@
   <div class="navigation">
     <NuxtLink to="/" class="nav-item">PHEQOR</NuxtLink>
     <a href="https://me.onlyra1n.top/" target="_blank" class="nav-item">博客</a>
-    <NuxtLink to="/donation" class="nav-item">捐赠</NuxtLink>
+    <NuxtLink to="/donation" class="nav-item">赞助</NuxtLink>
   </div>
   <slot />
 </template>
@@ -30,3 +30,5 @@
   padding-right: 3rem;
 }
 </style>
+
+<!-- TODO: SMALL SCREEN -->
