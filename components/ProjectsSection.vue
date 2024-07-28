@@ -105,6 +105,4 @@
   content: "📦";
   margin-right: 4px;
 }
-
-/* TODO: 你到底用不用Tailwind啊？？？？？ */
 </style>

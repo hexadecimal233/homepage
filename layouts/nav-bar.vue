@@ -29,5 +29,3 @@
   padding-right: 53px;
 }
 </style>
-
-<!-- TODO: Redesign the navbar. -->

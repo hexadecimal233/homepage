@@ -6,13 +6,17 @@
   --sub-bg: white;
   --bg-color: #e0f1ff;
   --bg-secondary: #ebf9ff;
-  --shadow-color: #a1c0d4;
+  --shadow-color: hsl(205, 37%, 73%);
   --text-color: #44b4e0;
   --text-color-d: #44b4e0;
+
+  /*
 
   @media (prefers-color-scheme: dark) {
     --primary-color-d: hsl(189, 80%, 20%);
     --bg-color: hsl(207, 100%, 4%);
     --bg-secondary: hsl(198, 100%, 6%);
   }
+
+  */
 }
