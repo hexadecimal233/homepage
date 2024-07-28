@@ -40,9 +40,8 @@ defineProps<{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   margin-inline: 1.5rem;
-  
+
   * {
     z-index: 2;
   }
