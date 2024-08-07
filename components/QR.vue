@@ -22,7 +22,6 @@ defineProps<{
   width: 15rem;
   height: 16rem;
   margin: 1rem;
-  /* TODO: Add a color variable */
 }
 
 .qr-bg {
