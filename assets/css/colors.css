@@ -9,14 +9,4 @@
   --shadow-color: hsl(205, 37%, 73%);
   --text-color: #44b4e0;
   --text-color-d: #44b4e0;
-
-  /*
-
-  @media (prefers-color-scheme: dark) {
-    --primary-color-d: hsl(189, 80%, 20%);
-    --bg-color: hsl(207, 100%, 4%);
-    --bg-secondary: hsl(198, 100%, 6%);
-  }
-
-  */
 }

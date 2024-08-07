@@ -2,7 +2,7 @@
   <Section>
     <div class="flex-col">
       <div class="proj-name">
-        我参与开发的项目:
+        我的公开项目:
       </div>
       <div v-motion-slide-visible-once-bottom class="proj-content">
         <div class="card">

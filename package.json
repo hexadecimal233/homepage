@@ -13,6 +13,7 @@
     "@nuxt/image": "^1.7.0",
     "@vueuse/motion": "^2.2.3",
     "nuxt": "^3.12.3",
+    "nuxt-icons": "^3.2.1",
     "simple-icons": "^13.1.0",
     "vue": "latest"
   },

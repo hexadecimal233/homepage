@@ -2,11 +2,13 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@vueuse/motion/nuxt", "@nuxt/image"],
-  css: [
-    "~/assets/css/global.css",
-    "~/assets/css/colors.css",
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@vueuse/motion/nuxt",
+    "@nuxt/image",
+    "nuxt-icons",
   ],
+  css: ["~/assets/css/global.css", "~/assets/css/colors.css"],
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
