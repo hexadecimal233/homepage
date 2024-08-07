@@ -2,7 +2,6 @@
 
 <template>
   <div class="navigation">
-    <NuxtLink to="/" class="nav-item w-16">PHEQOR</NuxtLink>
     <a href="https://me.onlyra1n.top/" target="_blank" class="nav-item">博客</a>
     <NuxtLink to="/donation" class="nav-item">赞助</NuxtLink>
     <NuxtLink to="/commission" class="nav-item">接单须知</NuxtLink>

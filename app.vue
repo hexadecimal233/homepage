@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <NuxtLayout name="nav-bar">
+    <NuxtLayout name="nav-bar-new">
       <NuxtPage />
     </NuxtLayout>
   </div>
