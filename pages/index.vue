@@ -2,7 +2,7 @@
 const language = [
   "<span>Chinese (Simplified)</span><span>🏠简体中文</span>",
   "<span>English</span><span>英语</span>",
-  "<del>Japanese</del><del>日本語</del>",
+  "<del>Japanese</del><del>日本語（划掉，</del>",
 ]
 const gear = [
   "<span>OS</span><span>Windows 11</span>",
@@ -29,14 +29,14 @@ const age = Math.floor(
     <RowSection name="Who Am I?">
       <p>{{ age }} 岁，是学生</p>
       <p>一只平平无奇的高中生</p>
-      <p>平常没什么事会写</p>
+      <p>平常没什么事会敲代码和编曲，</p>
       <p>喜欢：编曲、设计、开发 (写代码和一些逆向)、游戏</p>
       <p>
         正在学习的：混剪、音频可视化、编曲、平面设计、3D 制作、绘画、音
         MAD、网络安全、全栈开发、Vue、游戏开发...
       </p>
       <p>
-        一直想和小伙伴们整个大活，但不时会咕咕咕......所以有些项目经常会因此烂尾（悲）
+        一直想和小伙伴们整个大活，但很可能会咕咕咕......所以有些项目经常会因此烂尾（悲）
       </p>
       <p>叫我 Pheqor / Hexadecimal 就行 （目前有改ID的计划！新ID还在想...）</p>
       <p>
@@ -45,7 +45,7 @@ const age = Math.floor(
       </p>
     </RowSection>
 
-    <BadgeSection name="我用什么语言呢" :content="language"> </BadgeSection>
+    <BadgeSection name="我会什么语言" :content="language"> </BadgeSection>
 
     <ProjectsSection />
 

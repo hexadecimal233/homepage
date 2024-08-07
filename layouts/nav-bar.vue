@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed top-0 left-0 w-full h-14 shadow-md p-4 z-[9999] bg-[#b8b8b833] text-xl"
+    class="fixed top-0 left-0 w-full h-14 shadow-md p-4 z-[9996] bg-[#b8b8b833] text-xl backdrop-blur-sm"
   >
     <div class="nav-bar flex items-center justify-between mx-4">
       <NuxtLink to="/" class="w-16">PHEQOR</NuxtLink>
@@ -11,42 +11,47 @@
           }}</NuxtLink>
         </li>
       </ul>
-
-      <button
-        @click="toggleDropdown"
-        class="md:hidden z-[1000] *:rounded-full"
-        :class="{
-          open: dropdownOpen,
-        }"
-      >
-        <div class="bar-1"></div>
-        <div class="bar-2"></div>
-        <div class="bar-3"></div>
-      </button>
-
-      <div
-        class="fixed top-0 right-0 h-full w-64 bg-white z-[999] shadow-md transition-transform"
-        :class="{
-          'translate-x-full': !dropdownOpen,
-          'translate-x-0': dropdownOpen,
-        }"
-      >
-        <ul class="pt-12 space-y-4">
-          <li v-for="(url, name) in navItems" :key="name" class="p-4">
-            <NuxtLink :target="url.blank ? '_blank' : null" :to="url.url">{{
-              name
-            }}</NuxtLink>
-          </li>
-        </ul>
-      </div>
-
-      <div
-        v-show="dropdownOpen"
-        class="fixed inset-0 bg-black bg-opacity-50 z-[998]"
-        @click="toggleDropdown"
-      ></div>
     </div>
   </nav>
+
+  <!-- That's odd: backdrop-blur creates a mask to prevent fixed elements from displaying... So here's the workaround. -->
+  <button
+    @click="toggleDropdown"
+    class="fixed md:hidden top-4 right-4 z-[9999] rounded-full"
+    :class="{
+      open: dropdownOpen,
+    }"
+  >
+    <div class="bar-1"></div>
+    <div class="bar-2"></div>
+    <div class="bar-3"></div>
+  </button>
+
+  <div
+    class="fixed top-0 right-0 h-full w-64 bg-white z-[9998] shadow-md transition-transform"
+    :class="{
+      'translate-x-full': !dropdownOpen,
+      'translate-x-0': dropdownOpen,
+    }"
+  >
+    <ul class="pt-12 space-y-4">
+      <li v-for="(url, name) in navItems" :key="name" class="p-4">
+        <NuxtLink :target="url.blank ? '_blank' : null" :to="url.url">{{
+          name
+        }}</NuxtLink>
+      </li>
+    </ul>
+  </div>
+
+  <div
+    class="fixed inset-0 bg-black z-[9997] transition"
+    :class="{
+      'opacity-0': !dropdownOpen,
+      'pointer-events-none': !dropdownOpen,
+      'opacity-50': dropdownOpen,
+    }"
+    @click="toggleDropdown"
+  ></div>
 
   <slot />
 </template>
@@ -58,7 +63,7 @@ const dropdownOpen = ref(false)
 const navItems = {
   博客: { url: "https://me.onlyra1n.top/", blank: true },
   赞助: { url: "/donation", blank: false },
-  关于接单: { url: "/commission", blank: false },
+  //关于接单: { url: "/commission", blank: false },
 }
 
 const toggleDropdown = () => {
