@@ -17,7 +17,7 @@
   <!-- That's odd: backdrop-blur creates a mask to prevent fixed elements from displaying... So here's the workaround. -->
   <button
     @click="toggleDropdown"
-    class="fixed md:hidden top-4 right-4 z-[9999] rounded-full"
+    class="fixed md:hidden top-4 right-4 z-[9999] *:rounded-full"
     :class="{
       open: dropdownOpen,
     }"
@@ -46,8 +46,7 @@
   <div
     class="fixed inset-0 bg-black z-[9997] transition"
     :class="{
-      'opacity-0': !dropdownOpen,
-      'pointer-events-none': !dropdownOpen,
+      'opacity-0 pointer-events-none': !dropdownOpen,
       'opacity-50': dropdownOpen,
     }"
     @click="toggleDropdown"

@@ -38,3 +38,5 @@ img {
   border-bottom: solid 2px;
 }
 </style>
+
+<!-- TODO: Mobile adapt -->
