@@ -1,17 +1,3 @@
-<script setup lang="ts">
-import {
-  siBilibili,
-  siDiscord,
-  siGithub,
-  siMaildotru,
-  siSteam,
-  siTelegram,
-  siTencentqq,
-  siX,
-  siYoutube,
-} from "simple-icons"
-</script>
-
 <template>
   <Section>
     <div class="flex-col items-center justify-center text-center">
@@ -25,29 +11,36 @@ import {
       <div class="fadingbutton">↓</div>
       <div>如何找到我 (/≧▽≦)/</div>
       <div class="flex flex-wrap items-center justify-center *:m-2">
-        <SocialIcon :icon="siMaildotru" href="mailto:contact@onlyra1n.top" />
-        <SocialIcon class="qqid" :icon="siTencentqq" />
+        <SocialIcon icon="mdi--email" href="mailto:contact@onlyra1n.top" />
+        <SocialIcon class="qqid" icon="simple-icons--tencentqq" />
         <SocialIcon
-          :icon="siTencentqq"
+          class="qqqun"
+          icon="simple-icons--tencentqq"
           href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=bsVstl7UyIWYLk22GiaApKupGQB5haF0&authKey=%2BPOWzI6ZTA42YuQwoUeiIp4yKAyGEQR5Go6LUu6KbBHMwmcGsDf%2F78bH6aFC4TBy&noverify=0&group_code=904616368"
         />
         <SocialIcon
-          :icon="siYoutube"
+          icon="simple-icons--youtube"
           href="https://www.youtube.com/channel/UC3EJEVxrGTFeM1MNkqaNSJQ"
         />
         <SocialIcon
-          :icon="siDiscord"
+          icon="simple-icons--discord"
           href="https://discord.com/users/590761803244634113"
         />
-        <SocialIcon :icon="siGithub" href="https://github.com/hexadecimal233" />
-        <SocialIcon :icon="siTelegram" href="https://t.me/hexadecimal233" />
         <SocialIcon
-          :icon="siBilibili"
+          icon="simple-icons--github"
+          href="https://github.com/hexadecimal233"
+        />
+        <SocialIcon
+          icon="simple-icons--telegram"
+          href="https://t.me/hexadecimal233"
+        />
+        <SocialIcon
+          icon="simple-icons--bilibili"
           href="https://space.bilibili.com/174927495"
         />
-        <SocialIcon :icon="siX" href="https://twitter.com/llkawi_" />
+        <SocialIcon icon="simple-icons--x" href="https://twitter.com/llkawi_" />
         <SocialIcon
-          :icon="siSteam"
+          icon="simple-icons--steam"
           href="https://steamcommunity.com/profiles/76561198843801051"
         />
       </div>
@@ -73,6 +66,24 @@ import {
 .fadingbutton {
   animation: blink 1s 0s infinite;
 }
+
+.qqqun::before {
+  position: absolute;
+  content: "群";
+  font-size: 14px;
+  color: tan;
+  z-index: 1;
+}
+
+.qqid::before {
+  position: absolute;
+  content: "号";
+  font-size: 14px;
+  color: tan;
+  z-index: 1;
+}
+
+/* TODO: Fix text align */
 
 .qqid::after {
   position: absolute;

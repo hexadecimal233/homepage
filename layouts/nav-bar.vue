@@ -5,11 +5,7 @@
     <div class="nav-bar flex items-center justify-between mx-4">
       <NuxtLink to="/" class="w-16">PHEQOR</NuxtLink>
       <ul class="hidden md:flex ml-4 space-x-4">
-        <li v-for="(url, name) in navItems" :key="name">
-          <NuxtLink :target="url.blank ? '_blank' : null" :to="url.url">{{
-            name
-          }}</NuxtLink>
-        </li>
+        <NavBarItems :mobile="false" />
       </ul>
     </div>
   </nav>
@@ -35,11 +31,7 @@
     }"
   >
     <ul class="pt-12 space-y-4">
-      <li v-for="(url, name) in navItems" :key="name" class="p-4">
-        <NuxtLink :target="url.blank ? '_blank' : null" :to="url.url">{{
-          name
-        }}</NuxtLink>
-      </li>
+      <NavBarItems :mobile="true" />
     </ul>
   </div>
 
@@ -59,11 +51,6 @@
 import { ref } from "vue"
 
 const dropdownOpen = ref(false)
-const navItems = {
-  博客: { url: "https://me.onlyra1n.top/", blank: true },
-  赞助: { url: "/donation", blank: false },
-  //关于接单: { url: "/commission", blank: false },
-}
 
 const toggleDropdown = () => {
   dropdownOpen.value = !dropdownOpen.value

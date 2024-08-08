@@ -12,5 +12,5 @@ export default {
     "./app.vue",
     "./error.vue",
   ],
-  plugins: [addIconSelectors(["mdi"])], 
+  plugins: [addIconSelectors(["mdi", "simple-icons"])],
 }

@@ -1,15 +1,13 @@
 <script setup lang="ts">
-import type { SimpleIcon } from "simple-icons"
-
 defineProps<{
-  icon: SimpleIcon
+  icon: string
   href?: string | undefined
 }>()
 </script>
 
 <template>
   <a class="social-icon" target="_blank" :href="href">
-    <span v-html="icon.svg" />
+    <span class="iconify" :class="icon" />
   </a>
 </template>
 
@@ -18,18 +16,17 @@ defineProps<{
 
 .social-icon {
   transition: 0.2s;
-  width: 28px;
+  font-size: 24px;
 
   &:hover {
     transform: scale(1.15);
-    :deep(svg) {
+    svg {
       fill: var(--hover-color);
     }
   }
 
-  :deep(svg) {
+  svg {
     transition: 0.2s;
-    width: 100%;
     fill: var(--primary-color);
   }
 }
