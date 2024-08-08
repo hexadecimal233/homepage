@@ -47,7 +47,7 @@
     class="fixed inset-0 bg-black z-[9997] transition"
     :class="{
       'opacity-0 pointer-events-none': !dropdownOpen,
-      'opacity-50': dropdownOpen,
+      'opacity-30': dropdownOpen,
     }"
     @click="toggleDropdown"
   ></div>
