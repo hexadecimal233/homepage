@@ -45,6 +45,21 @@ const age = Math.floor(
       </p>
     </RowSection>
 
+    <RowSection name="与我联系">
+      <!-- TODO: Better font size & layout -->
+      <div>
+        <span class="iconify simple-icons--tencentqq"></span>
+        QQ号: 2593828650
+      </div>
+      <div>
+        <span class="iconify simple-icons--discord"></span>
+        Discord:
+        <a href="https://discord.com/users/590761803244634113" target="_blank">
+          hexadecimal_nya
+        </a>
+      </div>
+    </RowSection>
+
     <BadgeSection name="我会什么语言" :content="language"> </BadgeSection>
 
     <ProjectsSection />

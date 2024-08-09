@@ -12,19 +12,13 @@
       <div>如何找到我 (/≧▽≦)/</div>
       <div class="flex flex-wrap items-center justify-center *:m-2">
         <SocialIcon icon="mdi--email" href="mailto:contact@onlyra1n.top" />
-        <SocialIcon class="qqid" icon="simple-icons--tencentqq" />
         <SocialIcon
-          class="qqqun"
           icon="simple-icons--tencentqq"
           href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=bsVstl7UyIWYLk22GiaApKupGQB5haF0&authKey=%2BPOWzI6ZTA42YuQwoUeiIp4yKAyGEQR5Go6LUu6KbBHMwmcGsDf%2F78bH6aFC4TBy&noverify=0&group_code=904616368"
         />
         <SocialIcon
           icon="simple-icons--youtube"
           href="https://www.youtube.com/channel/UC3EJEVxrGTFeM1MNkqaNSJQ"
-        />
-        <SocialIcon
-          icon="simple-icons--discord"
-          href="https://discord.com/users/590761803244634113"
         />
         <SocialIcon
           icon="simple-icons--github"
@@ -65,39 +59,6 @@
 
 .fadingbutton {
   animation: blink 1s 0s infinite;
-}
-
-.qqqun::before {
-  position: absolute;
-  content: "群";
-  font-size: 14px;
-  color: tan;
-  z-index: 1;
-}
-
-.qqid::before {
-  position: absolute;
-  content: "号";
-  font-size: 14px;
-  color: tan;
-  z-index: 1;
-}
-
-/* TODO: Fix text align */
-
-.qqid::after {
-  position: absolute;
-  content: "QQ号：2593828650";
-  text-align: center;
-  width: 12rem;
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 5px;
-  background: white;
-  color: black;
-  opacity: 0;
-  transform: translateX(-50%) translateY(-185%);
-  transition: 0.25s cubic-bezier(0.25, 0.85, 0.46, 0.96);
 }
 
 .qqid:hover::after {
