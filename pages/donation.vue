@@ -5,8 +5,7 @@
       <div class="flex items-center">
         <a href="https://afdian.com/a/pheqor">
           <img
-            src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png"
-          />
+            src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png" />
         </a>
         <!--
         <a href="https://ko-fi.com/pheqor">
@@ -27,7 +26,6 @@
 </template>
 
 <style scoped>
-  
 img {
   margin: 1rem;
   width: 15rem;

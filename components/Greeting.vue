@@ -4,8 +4,7 @@
       <img
         src="https://gravatar.loli.net/avatar/daca850545a454e39660992d1163e88e?size=256&cache=1718432418567"
         class="w-40 h-40 m-16 rounded-full shadow-md hover:rotate-[1turn] transition-transform duration-500"
-        title="avatar"
-      />
+        title="avatar" />
       <div class="text-4xl">Ciallo ～(∠・ω&lt; )⌒★！</div>
       <div class="text-sm">(Swipe down)</div>
       <div class="fadingbutton">↓</div>
@@ -14,29 +13,23 @@
         <SocialIcon icon="mdi--email" href="mailto:contact@onlyra1n.top" />
         <SocialIcon
           icon="simple-icons--tencentqq"
-          href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=bsVstl7UyIWYLk22GiaApKupGQB5haF0&authKey=%2BPOWzI6ZTA42YuQwoUeiIp4yKAyGEQR5Go6LUu6KbBHMwmcGsDf%2F78bH6aFC4TBy&noverify=0&group_code=904616368"
-        />
+          href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=bsVstl7UyIWYLk22GiaApKupGQB5haF0&authKey=%2BPOWzI6ZTA42YuQwoUeiIp4yKAyGEQR5Go6LUu6KbBHMwmcGsDf%2F78bH6aFC4TBy&noverify=0&group_code=904616368" />
         <SocialIcon
           icon="simple-icons--youtube"
-          href="https://www.youtube.com/channel/UC3EJEVxrGTFeM1MNkqaNSJQ"
-        />
+          href="https://www.youtube.com/channel/UC3EJEVxrGTFeM1MNkqaNSJQ" />
         <SocialIcon
           icon="simple-icons--github"
-          href="https://github.com/hexadecimal233"
-        />
+          href="https://github.com/hexadecimal233" />
         <SocialIcon
           icon="simple-icons--telegram"
-          href="https://t.me/hexadecimal233"
-        />
+          href="https://t.me/hexadecimal233" />
         <SocialIcon
           icon="simple-icons--bilibili"
-          href="https://space.bilibili.com/174927495"
-        />
+          href="https://space.bilibili.com/174927495" />
         <SocialIcon icon="simple-icons--x" href="https://twitter.com/llkawi_" />
         <SocialIcon
           icon="simple-icons--steam"
-          href="https://steamcommunity.com/profiles/76561198843801051"
-        />
+          href="https://steamcommunity.com/profiles/76561198843801051" />
       </div>
     </div>
   </Section>

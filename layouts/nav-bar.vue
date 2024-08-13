@@ -1,7 +1,6 @@
 <template>
   <nav
-    class="fixed top-0 left-0 w-full h-14 shadow-md p-4 z-[9996] bg-[#b8b8b833] text-xl backdrop-blur-sm"
-  >
+    class="fixed top-0 left-0 w-full h-14 shadow-md p-4 z-[9996] bg-[#b8b8b833] text-xl backdrop-blur-sm">
     <div class="nav-bar flex items-center justify-between mx-4">
       <NuxtLink to="/" class="w-16">PHEQOR</NuxtLink>
       <ul class="hidden md:flex ml-4 space-x-4">
@@ -16,8 +15,7 @@
     class="fixed md:hidden top-4 right-4 z-[9999] *:rounded-full"
     :class="{
       open: dropdownOpen,
-    }"
-  >
+    }">
     <div class="bar-1"></div>
     <div class="bar-2"></div>
     <div class="bar-3"></div>
@@ -28,8 +26,7 @@
     :class="{
       'translate-x-full': !dropdownOpen,
       'translate-x-0': dropdownOpen,
-    }"
-  >
+    }">
     <ul class="pt-12 space-y-4">
       <NavBarItems :mobile="true" />
     </ul>
@@ -41,8 +38,7 @@
       'opacity-0 pointer-events-none': !dropdownOpen,
       'opacity-30': dropdownOpen,
     }"
-    @click="toggleDropdown"
-  ></div>
+    @click="toggleDropdown"></div>
 
   <slot />
 </template>

@@ -4,8 +4,7 @@
     :key="name"
     :class="{
       'p-4': mobile,
-    }"
-  >
+    }">
     <NuxtLink :target="url.blank ? '_blank' : null" :to="url.url">
       <span v-show="url.icon" class="iconify" :class="url.icon"></span>
       {{ name }}
