@@ -28,7 +28,7 @@ const age = Math.floor(
 
     <RowSection name="Who Am I?">
       <p>{{ age }} 岁，是学生</p>
-      <p>一只平平无奇的高中生</p>
+      <p>一只平平无奇的高中牲，坐标上海</p>
       <p>平常没什么事会敲代码和编曲，</p>
       <p>喜欢：编曲、设计、开发 (写代码和一些逆向)、游戏</p>
       <p>
@@ -45,20 +45,7 @@ const age = Math.floor(
       </p>
     </RowSection>
 
-    <RowSection name="与我联系">
-      <!-- TODO: Better font size & layout -->
-      <div>
-        <span class="iconify simple-icons--tencentqq"></span>
-        QQ号: 2593828650
-      </div>
-      <div>
-        <span class="iconify simple-icons--discord"></span>
-        Discord:
-        <a href="https://discord.com/users/590761803244634113" target="_blank">
-          hexadecimal_nya
-        </a>
-      </div>
-    </RowSection>
+    <ButtonsSection />
 
     <BadgeSection name="我会什么语言" :content="language"> </BadgeSection>
 

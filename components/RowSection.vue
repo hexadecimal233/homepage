@@ -7,34 +7,15 @@ defineProps<{
 <template>
   <Section>
     <div class="items-center justify-between">
-      <div class="section-name">{{ name }}</div>
-      <div v-motion-slide-visible-once-right class="section-content">
+      <div class="text-4xl flex-[2] m-8">{{ name }}</div>
+      <div
+        v-motion-slide-visible-once-right
+        class="flex flex-col flex-1 [&>*]:mb-4"
+      >
         <slot />
       </div>
     </div>
   </Section>
 </template>
-
-<style scoped>
-.section-name {
-  @apply text-4xl;
-  flex: 2;
-  margin: 3rem;
-}
-
-.section-content {
-  @apply flex flex-col;
-  flex: 1;
-
-  > * {
-    margin-bottom: 1rem;
-  }
-}
-
-.section-content > .visible {
-  opacity: 1;
-  transform: none;
-}
-</style>
 
 <!-- TODO: standardize margin & better section name (class + inherit) -->
