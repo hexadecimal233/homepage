@@ -10,6 +10,8 @@ const gear = [
   "<span>Laptop</span><span>Alienware M15-R5</span>",
   "<span>Phone</span><span>Redmi K60Pro</span>",
   "<span>Pioneer</span><span>DDJ 400</span>",
+  "<span>Arturia</span><span>Minilab 3</span>",
+  "<span>Wacom</span><span>CTL-472</span>",
 ]
 
 const age = Math.floor(
@@ -36,7 +38,7 @@ const age = Math.floor(
         MAD、网络安全、全栈开发、Vue、游戏开发...
       </p>
       <p>
-        一直想和小伙伴们整个大活，但很可能会咕咕咕......所以有些项目经常会因此烂尾（悲）
+        想整活，但很容易咕咕咕......所以有些项目经常会因此烂尾（悲）
       </p>
       <p>叫我 Pheqor / Hexadecimal 就行 （目前有改ID的计划！新ID还在想...）</p>
       <p>

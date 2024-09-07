@@ -47,6 +47,14 @@
           <a href="https://github.com/TO-Team/TO" class="proj-title">TO</a>
           <div class="proj-desc">次世代ACGN社交平台</div>
         </div>
+        <div class="card">
+          <a
+            href="https://github.com/hexadecimal233/midi-visualizer"
+            class="proj-title">
+            midi-visualizer
+          </a>
+          <div class="proj-desc">模仿一些音mad里的MIDI可视化工具</div>
+        </div>
         <div class="card archive">
           <a
             href="https://github.com/hexadecimal233/mcsm-reg"
