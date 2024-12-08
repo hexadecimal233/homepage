@@ -16,7 +16,6 @@ const gear = [
 ]
 
 const todo = [
-  "<span>🕊🕊🕊</span><span>更新Project栏的内容...</span>",
   "<span>🕊🕊🕊</span><span>修修一些坏掉的样式...</span>",
 ]
 

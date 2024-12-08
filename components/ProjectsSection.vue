@@ -57,6 +57,14 @@
         </div>
         <div class="card archive">
           <a
+            href="https://github.com/hexadecimal233/esp32c3-singing-stepper"
+            class="proj-title">
+            esp32c3-singing-stepper
+          </a>
+          <div class="proj-desc">电机唱歌~</div>
+        </div>
+        <div class="card archive">
+          <a
             href="https://github.com/hexadecimal233/mcsm-reg"
             class="proj-title">
             mcsm-reg
