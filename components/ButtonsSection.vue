@@ -16,12 +16,12 @@
           <a
             href="https://discord.com/users/590761803244634113"
             target="_blank">
-            hexadecimal_nya
+            hexadecimal233
           </a>
 
           <a href="https://discord.gg/ABykspBYVz" target="_blank">
             <img
-              src="https://img.shields.io/discord/1272325246015504414?color=7289DA&label=Discord&logo=discord&logoColor=white&style=flat-square"
+              src="https://img.shields.io/discord/1272325246015504414?color=7289DA&label=My Server&logo=discord&logoColor=white&style=flat-square"
               alt="Discord" />
           </a>
         </div>

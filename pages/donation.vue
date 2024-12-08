@@ -1,7 +1,10 @@
 <template>
   <Section>
     <div class="flex-col items-center justify-center text-center">
-      <span class="donation-name" style="width: 100%">赞助我</span>
+      <!-- TODO: 更改用户ID！老ID退役了 -->
+      <span class="donation-name" style="width: 100%">
+        赞助区！如果喜欢我的作品的话欢迎赞助支持！
+      </span>
       <div class="flex items-center">
         <a href="https://afdian.com/a/pheqor">
           <img
@@ -20,7 +23,6 @@
         <QR name="支付宝" img-url="/assets/img/alipay.png" color="#1678ff"></QR>
         <QR name="微信" img-url="/assets/img/wechat.png" color="#07c160"></QR>
       </div>
-      建议备注一下来意~
     </div>
   </Section>
 </template>
