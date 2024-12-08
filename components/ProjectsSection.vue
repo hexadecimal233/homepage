@@ -55,7 +55,7 @@
           </a>
           <div class="proj-desc">模仿一些音mad里的MIDI可视化工具</div>
         </div>
-        <div class="card archive">
+        <div class="card">
           <a
             href="https://github.com/hexadecimal233/esp32c3-singing-stepper"
             class="proj-title">

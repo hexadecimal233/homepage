@@ -11,7 +11,7 @@ const gear = [
   "<span>Pioneer</span><span>DDJ 400</span>",
   "<span>Arturia</span><span>Minilab 3</span>",
   "<span>Wacom</span><span>CTL-472</span>",
-  "<span>Sony</span><span>α-6700</span>",
+  "<span>Sony</span><span>A-6700</span>",
   "<span>Blue</span><span>Yeti</span>",
 ]
 
