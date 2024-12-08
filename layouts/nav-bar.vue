@@ -2,7 +2,7 @@
   <nav
     class="fixed top-0 left-0 w-full h-14 shadow-md p-4 z-[9996] bg-[#b8b8b833] text-xl backdrop-blur-sm">
     <div class="nav-bar flex items-center justify-between mx-4">
-      <NuxtLink to="/" class="w-16">PHEQOR</NuxtLink>
+      <NuxtLink to="/" class="w-16">Hexzii</NuxtLink>
       <ul class="hidden md:flex ml-4 space-x-4">
         <NavBarItems :mobile="false" />
       </ul>

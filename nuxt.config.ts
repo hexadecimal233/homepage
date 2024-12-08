@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
-      title: "Pheqor -- 一个简简单单的个人主页",
+      title: "Hexzii⭐ -- 一个简简单单的个人主页",
       htmlAttrs: {
         lang: "zh-CN",
       },
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         {
           key: "keywords",
           name: "keywords",
-          content: ["Homepage", "主页", "hexadecimal233", "Pheqor"].join(", "),
+          content: ["Homepage", "主页", "hexadecimal233", "Hexzii⭐"].join(", "),
         },
       ],
       link: [

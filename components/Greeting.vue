@@ -10,7 +10,6 @@
       <div class="fadingbutton">↓</div>
       <div>如何找到我 (/≧▽≦)/</div>
       <div class="flex flex-wrap items-center justify-center *:m-2">
-        <SocialIcon icon="mdi--email" href="mailto:contact@onlyra1n.top" />
         <SocialIcon
           icon="simple-icons--tencentqq"
           href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=bsVstl7UyIWYLk22GiaApKupGQB5haF0&authKey=%2BPOWzI6ZTA42YuQwoUeiIp4yKAyGEQR5Go6LUu6KbBHMwmcGsDf%2F78bH6aFC4TBy&noverify=0&group_code=904616368" />
@@ -20,9 +19,6 @@
         <SocialIcon
           icon="simple-icons--github"
           href="https://github.com/hexadecimal233" />
-        <SocialIcon
-          icon="simple-icons--telegram"
-          href="https://t.me/hexadecimal233" />
         <SocialIcon
           icon="simple-icons--bilibili"
           href="https://space.bilibili.com/174927495" />
