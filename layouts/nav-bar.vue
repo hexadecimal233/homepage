@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed top-0 left-0 w-full h-14 shadow-md p-4 z-[9996] bg-[#b8b8b833] text-xl backdrop-blur-sm">
+    class="fixed top-0 left-0 h-14 w-full shadow-md p-4 z-[9996] bg-[#b8b8b833] text-xl backdrop-blur-sm">
     <div class="nav-bar flex items-center justify-between mx-4">
       <NuxtLink to="/" class="w-16">Hexzii</NuxtLink>
       <ul class="hidden md:flex ml-4 space-x-4">
@@ -41,6 +41,14 @@
     @click="toggleDropdown"></div>
 
   <slot />
+
+  <div
+    class="footer bottom-0 left-0 w-full h-14 p-4 z-[9996] backdrop-blur-sm flex flex-col items-center">
+    访问计数：
+    <img
+      src="https://moe-counter.glitch.me/get/@6475578645547358_hm?theme=moebooru"
+      alt="If you are unable to see this, please refresh the page." />
+  </div>
 </template>
 
 <script lang="ts" setup>
