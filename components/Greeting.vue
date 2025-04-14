@@ -8,7 +8,7 @@
       <div class="text-4xl">Ciallo ～(∠・ω&lt; )⌒★！</div>
       <div class="text-sm">(Swipe down)</div>
       <div class="fadingbutton">↓</div>
-      <div>如何找到我 (/≧▽≦)/</div>
+      <div>找到我 (/≧▽≦)/</div>
       <div class="flex flex-wrap items-center justify-center *:m-2">
         <SocialIcon
           icon="simple-icons--tencentqq"
@@ -26,6 +26,9 @@
         <SocialIcon
           icon="simple-icons--steam"
           href="https://steamcommunity.com/profiles/76561198843801051" />
+        <SocialIcon
+          icon="simple-icons--pixiv"
+          href="https://www.pixiv.net/users/64711023" />
       </div>
     </div>
   </Section>
