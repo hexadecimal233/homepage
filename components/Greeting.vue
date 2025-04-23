@@ -22,19 +22,28 @@
         <SocialIcon
           icon="simple-icons--bilibili"
           href="https://space.bilibili.com/174927495" />
-        <SocialIcon icon="simple-icons--x" href="https://twitter.com/llkawi_" />
+        <SocialIcon icon="simple-icons--x" href="https://x.com/llkawi_" />
         <SocialIcon
           icon="simple-icons--steam"
           href="https://steamcommunity.com/profiles/76561198843801051" />
         <SocialIcon
           icon="simple-icons--pixiv"
-          href="https://www.pixiv.net/users/64711023" />、
+          href="https://www.pixiv.net/users/64711023" />
         <SocialIcon
           icon="simple-icons--zhihu"
           href="https://www.zhihu.com/people/onlyrain233" />
         <SocialIcon
           icon="simple-icons--niconico"
           href="https://bgm.tv/user/807162" />
+        <SocialIcon
+          icon="simple-icons--bluesky"
+          href="https://bsky.app/profile/onlyra1n.top" />
+        <SocialIcon
+          icon="simple-icons--soundcloud"
+          href="https://soundcloud.com/hexzii" />
+        <SocialIcon
+          icon="simple-icons--twitch"
+          href="https://www.twitch.tv/hexziistar" />
       </div>
     </div>
   </Section>
