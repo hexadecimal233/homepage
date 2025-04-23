@@ -48,6 +48,10 @@
     <img
       src="https://moe-counter.glitch.me/get/@6475578645547358_hm?theme=moebooru"
       alt="If you are unable to see this, please refresh the page." />
+    | Source Code:
+    <a href="https://github.com/hexadecimal233/homepage" target="_blank">
+      GitHub
+    </a>
   </div>
 </template>
 
