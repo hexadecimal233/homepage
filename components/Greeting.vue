@@ -28,7 +28,13 @@
           href="https://steamcommunity.com/profiles/76561198843801051" />
         <SocialIcon
           icon="simple-icons--pixiv"
-          href="https://www.pixiv.net/users/64711023" />
+          href="https://www.pixiv.net/users/64711023" />、
+        <SocialIcon
+          icon="simple-icons--zhihu"
+          href="https://www.zhihu.com/people/onlyrain233" />
+        <SocialIcon
+          icon="simple-icons--niconico"
+          href="https://bgm.tv/user/807162" />
       </div>
     </div>
   </Section>

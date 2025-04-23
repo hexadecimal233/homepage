@@ -52,12 +52,17 @@ const age = Math.floor(
 
     <ButtonsSection />
 
-    <BadgeSection name="语言技能：" :content="language"></BadgeSection>
 
     <ProjectsSection />
+
+    <!--
+    The styling is so fucked up here
+
+    <BadgeSection name="语言技能：" :content="language"></BadgeSection>
 
     <BadgeSection name="我的装备" :content="gear"></BadgeSection>
 
     <BadgeSection name="TODO-list" :content="todo"></BadgeSection>
+    -->
   </div>
 </template>
