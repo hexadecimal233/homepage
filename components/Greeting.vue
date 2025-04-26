@@ -23,7 +23,7 @@
           icon="simple-icons--bilibili"
           href="https://space.bilibili.com/174927495" />
         <SocialIcon icon="simple-icons--x" href="https://x.com/llkawi_" />
-        <SocicalIcon icon="simple-icons--instagram" href="https://instagram.com/hexzii_" />
+        <SocialIcon icon="simple-icons--instagram" href="https://instagram.com/hexzii_" />
         <SocialIcon
           icon="simple-icons--steam"
           href="https://steamcommunity.com/profiles/76561198843801051" />
